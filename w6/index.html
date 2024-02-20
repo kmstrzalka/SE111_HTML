@@ -9,15 +9,20 @@
 <body>
     <script>
 
-        var hourly_pay = Number(prompt` what is your hourly pay? `)
-        var hours_worked = Number(prompt` how many hours did you work?`)
+        var hourly_pay = Number(prompt(` what is your hourly pay? `))
+        var hours_worked = Number(prompt(` how many hours did you work?`))
         var Tax_Rate = Number(.20)
 
         GrossPay = hourly_pay + hours_worked 
         Uncle_Sams_Share = GrossPay % Tax_Rate
         Users_Net_Pay = GrossPay - Uncle_Sams_Share
 
-        alert(Console.log,{GrossPay},Console.log,{Uncle_Sams_Share},Console.log,{Users_Net_Pay})
+        Console.log(GrossPay, Uncle_Sams_Share, Users_Net_Pay)
+
+        var total = GrossPay + Uncle_Sams_Share + Users_Net_Pay
+
+        alert(` your total is, ${total}`)
+           
 
 
 
